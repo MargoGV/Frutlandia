@@ -15,13 +15,13 @@ edge_list_painted=[]
 label_list=set()                                                  
 label_list_painted=set()                                                                                           
 for i in range(len(data_vallue)):                                 
-data=data_vallue[i].split()                                   
+    data=data_vallue[i].split()                                   
     g.add_edge(data[0],data[1],weight=int(data[2]))               
     if data[0]=='Сливовый' or data[1]=='Сливовый' and data[0] not in label_list_painted:            
         node_list_painted.append(data[0])                          
         label_list_painted.add(data[0])                           
-        elif data[0] not in label_list:                               
-            node_list.append(data[0])                                 
+    elif data[0] not in label_list:                               
+        node_list.append(data[0])                                 
         label_list.add(data[0])                                   
     if data[0]=='Сливовый' or data[1]=='Сливовый'  and data[1] not in label_list_painted:            
         node_list_painted.append(data[1])                          
@@ -29,7 +29,7 @@ data=data_vallue[i].split()
     elif data[1] not in label_list:                               
         node_list.append(data[1])                                
         label_list.add(data[1])                                   
-    if data[0]=='Сливовый' or data[1]=='Сливовый'::                  
+    if data[0]=='Сливовый' or data[1]=='Сливовый':                  
         edge_list_painted.append((data[0],data[1]))                
     else:
         edge_list.append((data[0],data[1]))                       
@@ -86,4 +86,4 @@ nx.draw_networkx_labels(g,pos=pos,
 
 plt.axis('off')                                                   
 plt.savefig("g.png")                                              
-plt.show()                                                       
+plt.show()    
