@@ -15,7 +15,7 @@ def DFS(start):
 
 
 
-data=open('data.txt','r')
+data=open('data1.txt','r')
 
 
 g=nx.Graph()                                          
