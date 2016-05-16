@@ -4,7 +4,7 @@ import networkx as nx
 import matplotlib.pyplot as plt                                        
 
 
-data=open('data1.txt','r')                             
+data=open('data5.txt','r')                             
 
 g=nx.Graph()                                          
 data_vallue=data.readlines()                          
