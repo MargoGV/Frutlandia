@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 
-data=open('data.txt','r')
+data=open('data1.txt','r')
 
 g=nx.Graph() 
 k=0
